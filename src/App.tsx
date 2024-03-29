@@ -1,10 +1,8 @@
-
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 function App() {
   return (
-    <div>
-      Game Listing app
-    </div>
+    <Button colorScheme='blue'>Button</Button>
   )
 }
 
