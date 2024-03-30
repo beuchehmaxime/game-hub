@@ -1,11 +1,13 @@
-import useGenres from "../customhooks/useGenres"
+import useData from "../customhooks/useData"
+import useGenres, { Genre } from "../customhooks/useGenres"
 
 
 function GenreList() {
-  const {genres} = useGenres();
+  //const {genres} = useGenres();
+  const {data} = useGenres();
   return (
     <ul>
-      {genres.map(genre => <li key={genre.id}>{ genre.name }</li>)}
+      {data.map(genre => <li key={genre.id}>{ genre.name }</li>)}
     </ul>
   )
 }
