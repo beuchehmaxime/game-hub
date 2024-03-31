@@ -3,6 +3,7 @@ import { Game } from "../customhooks/useGames";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import getCroppedImageURl from "../services/image-url";
+import Emoji from "./Emoji";
 
 interface Props{
     game: Game;
@@ -19,7 +20,9 @@ function GameCard({game } : Props) {
                 </HStack>
                   <Heading fontSize='1xl'>
                     {game.name}
+                    <Emoji rating={game.rating_top} />
                 </Heading>
+
             </CardBody>
       </Card>
   )
