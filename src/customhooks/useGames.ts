@@ -60,7 +60,8 @@ const useGames = (
                 // genres: selectedGenre?.id,
                 // platforms: selectedPlatform?.id
                 genres: gameQuery.genre?.id,
-                platforms: gameQuery.platform?.id
+                platforms: gameQuery.platform?.id,
+                ordering: gameQuery.sortOrder
             }
         },
         // [selectedGenre?.id, selectedPlatform?.id]
