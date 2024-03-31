@@ -1,4 +1,4 @@
-import { Button, Menu, MenuButton, MenuItem, MenuList, Skeleton, SkeletonCircle } from "@chakra-ui/react"
+import { Button, Menu, MenuButton, MenuItem, MenuList, Skeleton } from "@chakra-ui/react"
 import { BsChevronDown } from "react-icons/bs"
 import usePlatforms from "../customhooks/usePlatforms"
 import { Platform } from "../customhooks/useGames";
